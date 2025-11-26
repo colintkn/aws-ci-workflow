@@ -26,6 +26,11 @@
         name: "{{ packages }}"
         state: present
 
+    - name: Install rsync on Amazon Linux
+      ansible.builtin.yum:
+        name: rsync
+        state: present
+
     - name: create site-enabled directory
       ansible.builtin.file:
         name: /etc/httpd/conf/sites-enabled
