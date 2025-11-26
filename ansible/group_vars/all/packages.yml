@@ -1,7 +1,7 @@
 ---
 packages:
   - httpd
-  - mod_wsgi
-  - firewalld
+  # - mod_wsgi
+  # - firewalld
 
 release: 2
